@@ -1,0 +1,314 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> contact us </title>
+
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>MAHEK SONI</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <style>
+      * {
+         justify-content: center;
+         text-align: center;
+         font-size: 30px;
+      }
+
+      .box {
+         padding: 1000px;
+         margin-left: 680px;
+         padding: 150px;
+         padding-bottom: 890px;
+         border: double;
+         text-align: center;
+
+      }
+
+      span {
+         color: red;
+         font-size: 20px;
+      }
+
+      header {
+         font-size: 1.5cm;
+         text-align: center;
+         color: #a10196;
+
+      }
+
+      .btn {
+         background-color: #a10196;
+      }
+
+      .name {
+         color: #fff;
+         font-size: 40px;
+
+      }
+   </style>
+</head>
+
+<body class="main-layout inner_page">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <div class="full_bg">
+      <!-- header -->
+      <header class="header-area">
+         <div class="container">
+            <div class="row d_flex">
+               <div class=" col-md-3 col-sm-3">
+                  <div class="logo">
+                     <a href="index.html">My Flower</a>
+                  </div>
+               </div>
+               <div class="col-md-9 col-sm-9">
+                  <div class="navbar-area">
+                     <nav class="site-navbar">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="service.html">Service</a></li>
+                           <li><a class="active" href="contact.html">Contact us</a></li>
+                           <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user"
+                                    aria-hidden="true"></i></a></li>
+                           <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search"
+                                    aria-hidden="true"></i></a></li>
+                        </ul>
+                        <button class="nav-toggler">
+                           <span></span>
+                        </button>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+
+      <header>Contact US </header>
+      <form action="#" id="request" class="main_form" name="myForm" onsubmit="return valident()">
+         <div class="appointment text-dark">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <i class="name">First Name :</i>
+                     <input class="form_control" id="fname" placeholder="Your first name" type="type" name=" fName">
+                     <span class="formerror" id="spnname"><b> </b></span>
+                  </div>
+                  <div class="col-md-6">
+                     <i class="name">Last Name :</i>
+                     <input class="form_control" id="fus" placeholder="Your last name" type="type" name=" lName">
+                     <span class="formerror" id="user"><b></b></span>
+                  </div>
+                  <div class="col-md-6">
+                     <i class="name">Email :</i>
+                     <input class="form_control" id="fname" placeholder="Email" type="email" name="Email">
+                     <span class="formerror" id="spnmail"><b></b></span>
+                  </div>
+                  <div class="col-md-6">
+                     <i class="name">Phone Number :</i>
+                     <input class="form_control" id="fnum" placeholder="Phone Number" type="phone" name="Phone Number">
+                     <span class="formerror" id="spnnum"><b></b></span>
+                  </div>
+                  <div class="col-md-6">
+                     <i class="name">Address :</i>
+                     <input class="form_control" id="fname" placeholder="Address" type="type" name="Address">
+                     <span class="formerror" id="spnadd"><b></b></span>
+                  </div>
+                  <div class="col-md-6">
+                     <i class="name">Password :</i>
+                     <input class="form_control" id="fpr" placeholder="Password" type="type" name="Address">
+                     <span id="passr"><b></b></span>
+                  </div>
+                  <div class="col-md-12">
+                     <tr>
+                        <span>
+                           <td colspan="2">
+                              <input type="submit" value="Submit" class="send_btn" class="btn" onclick="valident()"
+                                 class="form_control">
+                           </td>
+                        </span>
+                     </tr>
+                  </div>
+
+                  <div class="col-md-12">
+                     <button class="send_btn" type="button" onclick="openpopup()"> SUBMIT</button>
+                     <div class="popup" id="popup">
+                        <img src="images/done1.png">
+                        <h2>THANK YOU!</h2>
+                        <P>Your Details Will Be Successfully Submited.</P>
+                        <button type="button" onclick="closepopup()">OK</button>
+                     </div>
+                  </div>
+                  </table>
+      </form>
+   </div>
+   </div>
+   </div>
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-7">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-12">
+                        <div class="hedingh3 text_align_left">
+                           <h3>About</h3>
+                           <p>Most flowering plants depend on animals, such as bees, moths, and butterflies, to transfer
+                              their pollen between different flowers, and have evolved to attract these pollinators by
+                              various
+                              strategies, including brightly colored, conspicuous petals, attractive scents, and the
+                              production
+                              of nectar, a food source for pollinators.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-12">
+                        <div class="hedingh3 text_align_left">
+                           <h3>Menu</h3>
+                           <ul class="menu_footer">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="service.html">Service</a></li>
+                              <li><a href="extra.html">Contact us</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-12">
+                        <div class="hedingh3  text_align_left">
+                           <h3>Newsletter</h3>
+                           <form id="colof" class="form_subscri">
+                              <input class="newsl" placeholder="Email" type="text" name="Email">
+                              <button class="subsci_btn">Subscribe</button>
+                           </form>
+                           <ul class="top_infomation">
+                              <li><i class="fa fa-phone" aria-hidden="true"></i>
+                                 +01 1234567890
+                              </li>
+                              <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                                 <a href="Javascript:void(0)">maheksoni@gmail.com</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="follow text_align_center">
+                        <h3>Follow Us</h3>
+                        <ul class="social_icon ">
+                           <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script type="text/javascript">
+
+      function valident() {
+         var firstn = document.getElementById("fname").value;
+         if (firstn == "") {
+            document.getElementById("spnname").innerHTML = "Please Enter Your Name";
+         }
+         else if (!firstn.match(/^[a-zA-Z &&" "\-s,]+$/)) {
+            document.getElementById("spnname").innerHTML = "Alphabets Only";
+         }
+
+         var imail = document.getElementById("fname").value;
+         if (imail == "") {
+            document.getElementById("spnmail").innerHTML = "Please Enter Your E-mail Address";
+         }
+
+         var iphone = document.getElementById("fnum").value;
+         if (iphone == "") {
+            document.getElementById("spnnum").innerHTML = "Please Enter Your Mobile Number";
+         }
+         else if (!iphone.match(/^\d{10}$/)) {
+            document.getElementById("spnnum").innerHTML = "Numbers Only";
+         }
+
+         var fadd = document.getElementById("fname").value;
+         if (fadd == "") {
+            document.getElementById("spnadd").innerHTML = "Please Enter Your Address";
+         }
+
+         var iuser = document.getElementById("fus").value;
+         if (iuser == "") {
+            document.getElementById("user").innerHTML = "Please Enter Your last name ";
+         }
+
+         var ipass = document.getElementById("fpr").value;
+         if (ipass == "") {
+            document.getElementById("passr").innerHTML = "Please Enter Your Password";
+         }
+      }
+
+      const popup = document.getElementById("popup");
+
+      function openpopup() {
+         popup.classList.add("open-popup");
+      }
+
+      function closepopup() {
+         popup.classList.remove("open-popup");
+      }
+
+
+
+
+
+   </script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/bootstrap-datepicker.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> REGISTRATION FORM </title>
+   
+    <style>
+        *{
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        .box{
+            padding: 100px;
+            margin-left: 68px;
+            padding: 15px;
+            padding-bottom: 89px;
+            border: double;
+        }
+        span{
+            color: red;
+        }
+        header{
+            font-size: 1.5cm;
+            text-align: center;
+            color: green;
+            border: dotted;
+        }
+    </style>
+</head>
+<body bgcolor="hotpink">
+    <header>REGISTRATION FORM</header>
+<form action="#">
+    <table class="box" onsubmit="return valident()" method="post"cellspacing="5px" bgcolor ="pink">
+        <tr>
+            <th>Name : </th>
+            <td>
+                <input type="text"  id="fname" placeholder="enter your name " >
+            </td>
+            <td><span id="spnname"></span></td>   
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>
+            <input type="text"  id="fname" placeholder="enter your email " >
+        </td>
+         
+            <td><span id="spnmail"></span></td>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <td>
+                <input type="text"  id="fnum" placeholder="enter your number " >
+            </td> 
+            <td><span id="spnnum"></span></td>
+        </tr>
+        <tr>
+           <th>Aadhar Number</th> 
+           <td>
+            <input type="text"  id="fname" placeholder="enter your Aadhar number " >
+        </td> 
+           <td><span id="spnad"></span></td>
+        </tr>
+        <tr>
+            <tr>
+                <th>Gender</th><br>
+                 <td>
+                    <input type="radio" id="55">Male 
+                    <input type="radio" id="55">Female
+                </td>
+                <td><span id="spngen"></span></td><br>
+            </tr>
+         <tr>
+              <th>Address</th>
+              <td>
+                <input type="text"  id="fname" placeholder="enter your Address number " >
+            </td> 
+              <td><span id="spnadd"></span></td>
+            </tr>
+        <tr>
+                <th>Username</th>
+                <td>
+                    <input type="text"  id="fus" placeholder="enter your username" >
+                </td> 
+            <td><span id="user"></span></td>
+            </tr>
+        <tr>
+                <th>Password</th>
+                <td>
+                    <input type="password"  id="fpr" placeholder="enter your Password " >
+                </td> 
+            <td><span id="passr"></span></td>
+            
+            </tr>
+            <tr>
+            <span>
+                <td colspan="2">
+                <input type="submit" value="Register" class="btn" onclick="valident()">
+                </td>
+            </span></tr>
+            
+    </table>
+</form>
+    <script type="text/javascript">
+        function valident()
+        {
+            var firstn=document.getElementById("fname").value;
+                if(firstn=="")
+                {
+                    document.getElementById("spnname").innerHTML="Please Enter Your Name";
+                }
+                else if(!firstn.match(/^[a-zA-Z &&" "\-s,]+$/))
+                    {
+                        document.getElementById("spnname").innerHTML="Alphabets Only";
+                    }
+
+            var imail=document.getElementById("fname").value;
+                if(imail=="")
+                {
+                    document.getElementById("spnmail").innerHTML="Please Enter Your E-mail Address";
+                }
+
+            var iphone=document.getElementById("fnum").value;
+                if(iphone=="")
+                {
+                    document.getElementById("spnnum").innerHTML="Please Enter Your Mobile Number";
+                }
+                else if(!iphone.match(/^\d{10}$/))
+                    {
+                        document.getElementById("spnnum").innerHTML="Numbers Only";
+                    }
+                
+            var idhar=document.getElementById("fname").value;
+                if(idhar=="")
+                {
+                    document.getElementById("spnad").innerHTML="Please Enter Your Adharcard Number";
+                }
+                
+            var fadd=document.getElementById("fname").value;
+                if(fadd=="")
+                {
+                    document.getElementById("spnadd").innerHTML="Please Enter Your Address";
+                }
+                
+                
+
+            var iuser=document.getElementById("fus").value;
+                if(iuser=="")
+                {
+                    document.getElementById("user").innerHTML="Please Enter Your Username";
+                }
+
+            var ipass=document.getElementById("fpr").value;
+                if(ipass=="")
+                {
+                    document.getElementById("passr").innerHTML="Please Enter Your Password";
+                }
+
+        }        
+    </script>
+    
+</body>
+</html>
